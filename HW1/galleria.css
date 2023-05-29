@@ -1,0 +1,163 @@
+:root{
+    --error: #ee0a0a;
+    --nav: #0b1622;
+    --imgWidth: 300px;
+    --imgHeight: 300px;
+}
+body{
+    margin: 0;
+}
+
+#nav-top {
+    background-color: var(--nav);
+    height: 80px!important;
+    padding-left: 5px;
+    display: flex;
+    
+}
+
+#scritte{
+    width: 600px;
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#nav-top a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: monospace;
+} 
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 36px;
+    font-weight: bold;
+}
+/* modale */
+
+#modale.hidden
+{
+    display: none;
+}
+
+#modale{
+    position: fixed;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	 
+}
+
+#modale img {
+	height: 50%;
+	border: 1px solid black;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+/* Risultati*/
+.container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+#results{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 300px;
+    height: 400px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+span{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* icona salvataggio */
+.save{
+    width: 50px;
+    height: 50px;
+    background-color: #10142d;
+    position: absolute;
+    margin-top: 100px;
+    transition: opacity 0.3s;
+    color: rgba(255, 355, 255, 0);
+    margin-top: 200px;
+    border: none;
+    border-radius: 50px;
+    
+    background: white url(images/iconaSave.png) 10px 12px no-repeat;
+    background-size: 30px 30px;
+}
+
+.salvata{
+    width: 50px;
+    height: 50px;
+    background-color: #10142d;
+    position: absolute;
+    margin-top: 100px;
+    transition: opacity 0.3s;
+    color: rgba(255, 355, 255, 0);
+    margin-top: 200px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(135, 5, 186) url(images/iconaSave.png) 10px 12px no-repeat;
+    opacity: 0.9;
+    background-size: 30px 30px;
+}
+
+.commento{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.bordo{
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.carta:hover{
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+/* mobile */
+@media (max-width: 700px)
+{
+    #scritte{
+        margin-left: 0;
+    }
+}

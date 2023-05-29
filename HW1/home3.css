@@ -1,0 +1,273 @@
+:root{
+    --error: #ee0a0a;
+    --nav: #0b1622;
+    --imgWidth: 400px;
+    --imgHeight: 400px;
+}
+body{
+    margin: 0;
+}
+
+#nav-top {
+    background-color: var(--nav);
+    height: 80px!important;
+    padding-left: 5px;
+    display: flex;
+    
+}
+
+#scritte{
+    width: 600px;
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: var(--nav);
+}
+
+#nav-top a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: monospace;
+} 
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/universo.jpg");
+    position: relative;
+    width: 100%;
+    height: 500px;
+    animation: sali 20000s infinite linear;
+}
+
+@keyframes sali{
+    0%{
+        background-position: 900000%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+.banner p{
+    display: flex;
+    color: whitesmoke;
+    font-family: 'Playfair', serif;
+    font-size: 70px;
+    animation: 2s linear 0s 1 alternate sun-rise;
+}
+
+@keyframes sun-rise {
+    from {
+      transform: translateY(110vh);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+.info{
+    display: flex;
+}
+.ric{
+    font-family: 'Playfair', serif;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#box .div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+img{
+    width: var(--imgWidth);
+    height: var(--imgHeight);
+}
+
+
+.text{
+    margin-top: 20px;
+    height: 50px;
+}
+
+span{
+    font-family: monospace;
+    font-size: 18px;
+}
+
+#box .pic{
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    cursor: pointer;
+    background-color: white; 
+}
+
+
+#box .pic:hover {
+	background-color: #cfe3ff;
+}
+#box img{
+    max-width: 100%;
+	max-height: 70%;
+}
+
+#modale.hidden
+{
+    display: none;
+}
+
+#modale{
+    position: fixed;
+	top: -20;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	 
+}
+
+#modale img {
+	height: 50%;
+	border: 1px solid black;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+/*footer*/
+footer{
+    height: 200px;
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-col{
+    padding: 0 15px;
+    height: 100%;
+}
+
+.footer-col strong{
+    display: flex;
+    color: #919496;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .footer-col p{
+    font-size: 18px;
+    padding: 3px 0 15px;
+    margin: 0;
+  }
+
+footer p{
+    display: flex;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+
+/* Per la funzione di salvataggio*/
+
+.saveForm:hover{
+    opacity: 1;
+}
+
+.save{
+    width: 50px;
+    height: 50px;
+    background-color: #10142d;
+    position: absolute;
+    margin-top: 100px;
+    transition: opacity 0.3s;
+    color: rgba(255, 355, 255, 0);
+    margin-top: 200px;
+    border: none;
+    border-radius: 50px;
+    
+    background: white url(images/iconaSave.png) 10px 12px no-repeat;
+    background-size: 30px 30px;
+}
+
+.saveIcon{
+    margin-left: -50px;
+    padding-top: 212px;
+    width: 30px;
+    box-shadow: none;
+    position: absolute;
+  }
+
+.salvata{
+    width: 50px;
+    height: 50px;
+    background-color: #10142d;
+    position: absolute;
+    margin-top: 100px;
+    transition: opacity 0.3s;
+    color: rgba(255, 355, 255, 0);
+    margin-top: 200px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(135, 5, 186) url(images/iconaSave.png) 10px 12px no-repeat;
+    opacity: 0.9;
+    background-size: 30px 30px;
+}
+
+/*mobile*/
+@media (max-width: 700px)
+{
+    .banner{
+        animation: saliMOB 20000s infinite linear;
+    }
+
+    @keyframes saliMOB{
+        0%{
+            background-position: 90000%;
+        }
+        100%{
+            background-position: 0%;
+        }
+    }
+
+}

@@ -1,0 +1,186 @@
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    color: #11022f;
+}
+  
+input {
+    margin-left: 0.5em;
+}
+
+#contenuto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("images/universo.jpg");
+    animation: scrolla 20000s infinite linear;
+}
+
+@keyframes scrolla{
+    0%{
+        background-position: 0%
+    }
+    100%{
+        background-position: 900000%;
+    }
+}
+
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+#fm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* navbar */
+:root{
+    --error: #ee0a0a;
+    --nav: #0b1622;
+    --imgWidth: 300px;
+    --imgHeight: 300px;
+}
+body{
+    margin: 0;
+}
+
+#nav-top {
+    background-color: var(--nav);
+    height: 80px!important;
+    padding-left: 5px;
+    display: flex;
+    
+}
+
+#scritte{
+    width: 600px;
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#nav-top a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("universo.jpg");
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.banner p{
+    display: flex;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 70px;
+    animation-direction:normal;
+    animation-duration: 1s;
+}
+
+/**/
+.text{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#descrizione p{
+    color: white;
+    font-size: 24px;
+}
+/*footer */
+footer{
+    height: 200px;
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-col{
+    padding: 0 15px;
+    height: 100%;
+}
+
+.footer-col strong{
+    display: flex;
+    color: #919496;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .footer-col p{
+    font-size: 18px;
+    padding: 3px 0 15px;
+    margin: 0;
+  }
+
+footer p{
+    display: flex;
+    color: white;
+}
+
+  h2{
+    color: white;
+  }
+  
+  body{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+ /* mobile */
+@media (max-width: 875px)
+{
+    #scritte{
+        margin-left: 0;
+    }
+
+    #scritte a{
+        font-size: 16px;
+    }
+
+    #logo{
+        font-size: 22px;
+    }
+}

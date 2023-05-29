@@ -1,0 +1,134 @@
+h1{
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    color: #11022f;
+    font-family: 'Playfair', serif;
+}
+
+label{
+    font-size: 16px;
+}
+/*Quando c'è errore rimette l'opacità alle scritte che già ci sono*/
+.errorSU label {
+    color: #fa0f27;
+}
+
+.errorSU span {
+    opacity: 1;
+    font-size: 14px;
+    color: #fa0f27;
+}
+
+.errorSU img {
+    opacity: 1;
+}
+
+.errorSU input {
+    border-color: #fa0f27;
+}
+
+/*toglie opacità (le nasconde)*/
+form img{
+    opacity: 0;
+    width: 15px;
+}
+
+form span {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    transition: opacity 0.3s ease;
+}
+
+.buttonlogin p{
+    color: black;
+}
+
+#contenuto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("images/pulsar.jpg");
+    background-size: cover;
+}
+
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+body{
+    margin: 0;
+}
+
+.login-btn{
+    width: 50%;
+    padding-right: 15px;
+  }
+  
+  .login-btn input{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 30px;
+    padding: 16px 14px 18px;
+    margin-left: 15px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #10142d;
+    transition-property: background-color;
+    transition-duration: .3s;
+    justify-content: center;
+  }
+  
+  .login-btn input:hover{
+    cursor: pointer;
+    background-color: #3948ab;
+  }
+  
+  .submit-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="checkbox"] {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+}
+
+@media(max-width: 800px)
+{
+   form{
+        gap: 0;
+   }
+}
